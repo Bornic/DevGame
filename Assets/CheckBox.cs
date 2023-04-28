@@ -21,7 +21,7 @@ public class CheckBox : MonoBehaviour
     {
         
     }
-
+    //По нажатию мыши проверяет активен ли чек бокс и меняет его состояние
     private void OnMouseDown()
     {
 

@@ -16,7 +16,10 @@ public class Uptime : MonoBehaviour
     }
 
     private void OnMouseDown()
-    {
+
+    {  
+        //Уверен что это сделанно крайне костыльно, но времени было не много
+        //меняет цвет и положение слайдера, а так же делает не активными остальные меню
         GameObject.Find("slider").transform.position = new Vector3(-2.94f, 4.16f, -10f);
         GameObject.Find("slider").GetComponent<SpriteRenderer>().color = new Color(0.6235294f, 0.7450981f, 0f, 1f);
         MenuOn.SetActive(true);

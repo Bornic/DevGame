@@ -16,6 +16,7 @@ public class CheckMelody : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //сделано крайне похабно переключение ползунка при выборе мелодии
         var x = GetPos.transform.position;
         SetPos.transform.position = x + new Vector3(-1.23f,0.81f,5f);
 

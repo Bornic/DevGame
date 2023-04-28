@@ -17,7 +17,9 @@ public class DayCycle : MonoBehaviour
     }
 
     private void OnMouseDown()
-    {
+    {  
+        //Уверен что это сделанно крайне костыльно, но времени было не много
+        //меняет цвет и положение слайдера, а так же делает не активными остальные меню
         GameObject.Find("slider").transform.position = new Vector3(-2.94f, 2.7f, -10f);
         GameObject.Find("slider").GetComponent<SpriteRenderer>().color = new Color(0.9960784f, 0.4470588f, 0.4627451f, 1f);
         MenuOn.SetActive(true);
