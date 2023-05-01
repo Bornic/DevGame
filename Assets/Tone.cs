@@ -9,6 +9,7 @@ public class Tone : MonoBehaviour
     [SerializeField] GameObject MenuOff1;
     [SerializeField] GameObject MenuOff2;
     [SerializeField] GameObject MenuOff3;
+    [SerializeField] GameObject MenuBackColor;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class Tone : MonoBehaviour
         MenuOff1.SetActive(false);
         MenuOff2.SetActive(false);
         MenuOff3.SetActive(false);
+        MenuBackColor.GetComponent<SpriteRenderer>().color = new Color(0.9647059f, 0.5803922f, 0.2588235f, 1f);
 
     }
     // Update is called once per frame

@@ -9,6 +9,7 @@ public class Morningjob : MonoBehaviour
     [SerializeField] GameObject MenuOff1;
     [SerializeField] GameObject MenuOff2;
     [SerializeField] GameObject MenuOff3;
+    [SerializeField] GameObject MenuBackColor;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class Morningjob : MonoBehaviour
         MenuOff1.SetActive(false);
         MenuOff2.SetActive(false);
         MenuOff3.SetActive(false);
+        MenuBackColor.GetComponent<SpriteRenderer>().color = new Color(1f, 0.7490196f, 0.1803922f, 1f);
 
     }
     // Update is called once per frame

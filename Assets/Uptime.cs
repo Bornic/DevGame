@@ -8,6 +8,7 @@ public class Uptime : MonoBehaviour
     [SerializeField] GameObject MenuOff1;
     [SerializeField] GameObject MenuOff2;
     [SerializeField] GameObject MenuOff3;
+    [SerializeField] GameObject MenuBackColor;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class Uptime : MonoBehaviour
         MenuOff1.SetActive(false);
         MenuOff2.SetActive(false);
         MenuOff3.SetActive(false);
+        MenuBackColor.GetComponent<SpriteRenderer>().color = new Color(0.6235294f, 0.7450981f, 0f, 1f);
 
 
 

@@ -18,7 +18,7 @@ public class CheckMelody : MonoBehaviour
     {
         //сделано крайне похабно переключение ползунка при выборе мелодии
         var x = GetPos.transform.position;
-        SetPos.transform.position = x + new Vector3(-1.23f,0.81f,5f);
+        SetPos.transform.position = x + new Vector3(-1.22f,0.94f,5f);
 
 
 

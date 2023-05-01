@@ -9,6 +9,7 @@ public class DayCycle : MonoBehaviour
     [SerializeField] GameObject MenuOff1;
     [SerializeField] GameObject MenuOff2;
     [SerializeField] GameObject MenuOff3;
+    [SerializeField] GameObject MenuBackColor;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class DayCycle : MonoBehaviour
         MenuOff1.SetActive(false);
         MenuOff2.SetActive(false);
         MenuOff3.SetActive(false);
+        MenuBackColor.GetComponent<SpriteRenderer>().color = new Color(1f, 0.4509804f, 0.4666667f, 1f);
 
 
     }
